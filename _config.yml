@@ -3,12 +3,12 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
+title: Chicago_01
 subtitle:
 description:
 keywords:
-author: John Doe
-language:
+author: Chicago_01
+language: zh-CN
 timezone:
 
 # URL
@@ -27,6 +27,9 @@ category_dir: categories
 code_dir: downloads/code
 i18n_dir: :lang
 skip_render:
+  - CNAME
+  - baidu_verify_xX4Exfrnne.html
+
 
 # Writing
 new_post_name: :title.md # File name of new posts
@@ -43,7 +46,9 @@ highlight:
   line_number: true
   auto_detect: false
   tab_replace:
-  
+
+# MathJax Support
+mathjax: true
 # Home page setting
 # path: Root path for your blogs index page. (default = '')
 # per_page: Posts displayed per page. (0 = disable pagination)
@@ -73,9 +78,11 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: landscape
+theme: icarus
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type:
+  type: git
+  repo: https://github.com/Chicaogo/chicaogo.github.io.git
+  branch: master
